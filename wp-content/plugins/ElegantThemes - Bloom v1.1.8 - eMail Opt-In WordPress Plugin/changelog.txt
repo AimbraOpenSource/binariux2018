@@ -1,0 +1,176 @@
+version 1.1.8 ( updated 08-15-2016 )
+- Fixed settings page font issues in WordPress 4.6
+	* bloom.php
+	* dashboard/css/et_dashboard.css
+	* core/admin/css/core.css
+	* core/functions.php
+
+version 1.1.7 ( updated 06-22-2016 )
+- Fixed parse error that caused plugin to fail in some instances.
+ * bloom/bloom.php
+
+version 1.1.6 ( updated 06-21-2016 )
+- Fixed the jumping issue with "On Click" trigger
+- Increased auto close timeout duration
+	* js/custom.js
+- Logged in users actions are now excluded from stats
+- Optimized scripts and styles loading on frontend
+	* bloom.php
+	* js/custom.js
+- Fixed "undefined index" message
+	* bloom.php
+- Added titles to the header menu in Dashboard
+	* dashboard/dashboard.php
+	* dashboard/includes/options.php
+- Added option to close popup/flyin automatically after subscribe
+	* bloom.php
+	* dashboard/includes/options.php
+	* js/custom.js
+- Fixed the issue with Optin form, displaying on Homepage instead of a specific page selected in Dashboard
+- Fixed the issue with Optin not working on Blog page
+	* bloom.php
+	* dashboard/includes/options.php
+
+version 1.1.5 ( updated 05-10-2016 )
+- Updated core submodule to latest versions (Fonts files were moved to /core. If you are currently calling these font files, your CSS files should be updated with new file paths).
+	* /core
+- Updated Google+ icon to match the new Google+ logo & branding guidlines.
+	* core/admin/fonts
+- Mailpoet optin form: Fixed subscription issues
+	* bloom.php
+
+version 1.1.4 ( updated 04-13-2016 )
+- Fixed an issue that caused theme updates to fail when Bloom, Monarch or the Divi Builder were installed.
+	* core/admin/includes/class-updates.php
+
+version 1.1.3 ( updated 04-12-2016 )
+- Added option to configure auto updates from the Plugin Settings
+	* bloom.php
+	* css/admin.css
+	* dashboard/css/et_dashboard.css
+	* dashboard/includes/options.php
+	* js/admin.js
+	* /core
+
+version 1.1.2 ( updated 02-26-2016 )
+- Fixed the issue with stats data on new installs
+	* bloom.php
+
+version 1.1.1 ( updated 02-17-2016 )
+- IMPORTANT: Fixed critical privilege escalation security vulnerability that, if properly exploited, could allow unprivileged registered WordPress users to modify plugin settings.
+	* For more detailed information, please refer to the full public disclosure that was emailed to all customers on 2-17-2016: http://bit.ly/1Q9P13N
+
+version 1.1 ( updated 08-31-2015 )
+* All files changed/updated
+- Added New Email Providers:
+	* ActiveCampaign
+	* Emma
+	* HubSpot
+	* SalesForce
+- Added "on-click" trigger for pop-ups and fly-ins
+- Fixed the issue with apostrophes in opt-in names, breaking script execution in some cases
+- Fixed the issue with unexpected output error upon the plugin activation on some sites
+
+version 1.0.6 ( updated 08-18-2015 )
+- MailChimp: Added option to disable Double optin
+- Fixed the issue with inline form position, when error message appears
+- Getresponse: Added cycle_day parameter to make it work correctly with contacts added via Bloom
+- Campaign Monitor: Fixed the issue with classes conflicts with some plugins
+- Infusionsoft: Fixed the issue with new subscribers, added as non-marketable
+- Fixed the issue with Open Sans font loaded multiple times if Monarch and/or Divi was enabled
+- Mailchimp: Fixed the issue with 25 lists limit
+	* bloom.php
+- OntraPort, MailPoet, Sendinblue, iContact, Mad Mimi, Constant Contact: Fixed the issue, where people couldn't subscribe to several lists with the same email address
+- Constant Contact: Fixed the issue with users, not being able to subscribe with the same email if they were manually deleted from the list
+- Constant Contact: Fixed the issue with subscribers, added to Constant Contact twice
+	* bloom.php
+	* js/custom.js
+- Fixed the issue with wrongly selected categories in Display Settings
+	* dashboard/dashboard.php
+- Fixed the width of preview modal when previewing the Flyin or Widget optin
+	* bloom.php
+	* css/admin.css
+- Fixed the issue with some strings localization in the Dashboard
+	* bloom.php
+	* dashboard/dashboard.php
+- Fixed the issue with checkbox image path in CSS code
+	* css/style.css
+- Fixed WP_Widget class constructor warning message in WordPress 4.3
+	* includes/bloom-widget.php
+- Added some basic HTML tags support in the Success message field ( a, br, span, strong )
+	* bloom.php
+	* css/style.css
+	* dashboard/includes/options.php
+- Improved the appearance of shortcode in the Modal window, when "Generate Shortcode" button is clicked to make it easier to select and copy
+	* css/admin.css
+	* dashboard/dashboard.php
+	* js/admin.js
+
+version 1.0.5 ( updated 06-04-2015 )
+- Security Patch - Disallowed SVG images from media library upload.
+	* bloom.php
+
+version 1.0.4 ( updated 05-02-2015 )
+- Fixed high memory usage issues on some sites with a lot of statistics data
+	* bloom.php
+
+version 1.0.3 ( updated 04-23-2015 )
+- Fixed the issue with "loading icon" visibility in WordPress 4.2
+	* css/admin.css
+	* dashboard/css/et_dashboard.css
+	* dashboard/js/et_dashboard.js
+	* js/admin.js
+- Improved the settings page perfomance
+	* bloom.php
+	* dashboard/css/et_dashboard.css
+	* dashboard/dashboard.php
+	* dashboard/includes/options.php
+	* dashboard/js/et_dashboard.js
+	* js/admin.js
+	* css/admin.css
+	* removed dashboard/js/chosen
+- Fixed the issue with quotes in account names
+- Fixed "Below Post" optin priority
+- Improved compatibility with plugins that use tinyMCE editor
+	* bloom.php
+- Fixed the issue with an optin button background color in some themes
+	* css/style.css
+
+version 1.0.2 ( updated 03-23-2015 )
+- Fixed quotes encoding issues
+- Fixed the issue with the Widget Custom CSS, not applied to a site
+	* bloom.php
+- Improved the plugin settings page perfomance
+- Added "Refresh Stats" and "Clear Stats" buttons
+	* bloom.php
+	* css/admin.css
+	* js/admin.js
+- Renamed MailChimp class to avoid conflicts with other plugins
+	* bloom.php
+	* subscription/mailchimp/mailchimp.php
+- Fixed the issue with wrong impressions count, when several form triggers were enabled
+- Fixed some issues with error message styling
+	* js/custom.js
+- Fixed the issue with inline optin height calculation, when a form is bigger than content
+	* bloom.php
+	* css/style.css
+	* js/custom.js
+
+version 1.0.1 ( updated 03-19-2015 )
+- MailChimp: Fixed the issue with authorization of accounts with 0 lists
+- Feedblitz: Fixed the issue with SSL certificate, that is used for API requests
+- Fixed the issue with a form title and message characters encoding
+- Improved compatibility with other plugins. Fixed the issue with TinyMCE button script, loaded on plugins admin pages.
+- Mad Mimi: Improved error messages
+- MailPoet: Added Double Opt-in support
+- Fixed the issue with some forms, missing the name field
+- Fixed round() php function compatibility issues with older versions of PHP
+	* bloom.php
+- Now it's possible to use a blank title for the widget
+	* includes/bloom-widget.php
+- Removed text shadow from forms footer element.
+	* css/style.css
+- Infusionsoft: Renamed the folder to lowercase. Fixes require_once function error on some servers.
+
+version 1.0
+- Initial Release.
